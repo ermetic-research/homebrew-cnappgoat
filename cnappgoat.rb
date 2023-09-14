@@ -5,21 +5,21 @@
 class Cnappgoat < Formula
   desc "CNAPPgoat is an open source project designed to modularly provision vulnerable-by-design components in cloud environments"
   homepage "https://github.com/ermetic-research/cnappgoat"
-  version "0.1.0-beta"
+  version "0.2.0-beta"
   license "Apache License 2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ermetic-research/cnappgoat/releases/download/v0.1.0-beta/cnappgoat_0.1.0-beta_macOS-ARM64.tar.gz"
-      sha256 "3747dd3da9825fbe2f666d0adfeb37e25b01cdacb5d637e2253caa70554b9901"
+      url "https://github.com/ermetic-research/cnappgoat/releases/download/v0.2.0-beta/cnappgoat_0.2.0-beta_macOS-ARM64.tar.gz"
+      sha256 "b9d83ee42d86b30c5e85ccccef957b3b84b7fae326e6180895757afddd243cff"
 
       def install
         bin.install "cnappgoat"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ermetic-research/cnappgoat/releases/download/v0.1.0-beta/cnappgoat_0.1.0-beta_macOS-64bit.tar.gz"
-      sha256 "7cdd478a04a47e39006ab1daf054e9d3ba54e334849b57adaaf12823a1587d4a"
+      url "https://github.com/ermetic-research/cnappgoat/releases/download/v0.2.0-beta/cnappgoat_0.2.0-beta_macOS-64bit.tar.gz"
+      sha256 "2da4666da38bf7f4f1e1d4bda1b2683f77a25e74a9c1fe36501d8359cd1baad7"
 
       def install
         bin.install "cnappgoat"
@@ -29,16 +29,16 @@ class Cnappgoat < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ermetic-research/cnappgoat/releases/download/v0.1.0-beta/cnappgoat_0.1.0-beta_Linux-ARM64.tar.gz"
-      sha256 "defa8a4d41b2db355557221c9ae47508084425166e2641754f8d9201d17e35ca"
+      url "https://github.com/ermetic-research/cnappgoat/releases/download/v0.2.0-beta/cnappgoat_0.2.0-beta_Linux-ARM64.tar.gz"
+      sha256 "79192b03d6abc888aa1c2573a31a7de1d30adb8ecc309c31434292074bac832d"
 
       def install
         bin.install "cnappgoat"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ermetic-research/cnappgoat/releases/download/v0.1.0-beta/cnappgoat_0.1.0-beta_Linux-64bit.tar.gz"
-      sha256 "9dcb31d039cfec4024f6307c08d1a9010a8eeb02b880709860465ac38cf93162"
+      url "https://github.com/ermetic-research/cnappgoat/releases/download/v0.2.0-beta/cnappgoat_0.2.0-beta_Linux-64bit.tar.gz"
+      sha256 "bdac163179611a290fff37163a597099d80d3591a3b147f9779a544905a1a440"
 
       def install
         bin.install "cnappgoat"
